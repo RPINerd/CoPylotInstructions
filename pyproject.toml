@@ -1,18 +1,19 @@
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=2.1.2"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry]
-name = "copylot-instructions"
+[project]
+name = "copylot"
 version = "0.1.0"
 description = "Customizable generator for GitHub Copilot instruction files"
-authors = ["RPINerd"]
+authors = [
+    {name = "RPINerd"},
+]
+requires-python = ">=3.10"
 readme = "README.md"
-packages = [{include = "copylot", from = "src"}]
+dependencies = [
+    "questionary>=2.1.0",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.8"
-questionary = ">=1.10.0"
-
-[tool.poetry.scripts]
+[project.scripts]
 copylot = "copylot.build_pylot:main"

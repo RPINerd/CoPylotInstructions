@@ -1,5 +1,11 @@
+# IDE
 *.vscode
 *.mypy*
+
+# Python
 *.venv
 __pycache__/
 *.pyc
+
+# Build
+dist/

@@ -40,9 +40,8 @@
 Utilize UV where possible for managing packages and virtual environments. Prioritize standard libraries over third-party libraries unless a third-party library is significantly better.
 
 - Use pathlib instead of os.path for file and directory manipulations.
+- Use Path.open() instead of open() for file operations.
 - Use argparse for command-line argument parsing.
 - Use logging instead of print statements for debugging and information messages.
 - Use pytest for unit testing.
 - Use itertools for advanced iterable manipulations.
-
-### Third-party Libraries
