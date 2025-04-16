@@ -1,0 +1,15 @@
+{
+    // Paste in your vscode settings to enable universal copilot guidance at the IDE level
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "text": "Avoid making assumptions. If you need additional context to accurately answer the user, ask the user for the missing information. Be specific about which context you need.",
+            "text": "Always provide the name of the file in your response so the user knows where the code goes.",
+            "text": "Prioritize readability. Documentation is mandatory and complex algorithms should have additional comments explaining functionality.",
+            "text": "Always break code up into modules and components so that it can be easily reused across the project.",
+            "text": "Maximize algorithmic big-O efficiency for memory and runtime.",
+            "text": "Follow proper style conventions for the code language being used.",
+            "text": "Do not add extra code beyond what is absolutely necessary to solve the problem the user provides.",
+            "text": "Do not reinvent the wheel. If a built-in function or library can accomplish the task, use it instead of writing custom code."
+        }
+    ]
+}
